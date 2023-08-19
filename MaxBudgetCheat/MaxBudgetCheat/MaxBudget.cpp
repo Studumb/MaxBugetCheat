@@ -15,8 +15,6 @@ void MaxBudget::ParseLine(const ArgScript::Line& line)
 {
 	//The cheat will only work if the user is currently in an editor
 	if (Editor.IsActive()) {
-		//There might be some mods that change the maximum budget so we need a large value to add
-		//in order to put the budget value to its maximum value and in this case is MAXIMUM_ALLOWED
 		Editor.mpEditorLimits->AddValue(Editor.mpEditorLimits->kBudget, MAXIMUM_ALLOWED);
 	}
 	else {
